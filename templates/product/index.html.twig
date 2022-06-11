@@ -5,6 +5,12 @@
 
 {% block body %}
 
-	{{ component('product') }}
+	{{ component('product', {
+        id: 1,
+    }) }}
+
+	{{ component('product', {
+        id: 2,
+    }) }}
 
 {% endblock %}
