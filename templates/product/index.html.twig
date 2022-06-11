@@ -4,13 +4,9 @@
 {% endblock %}
 
 {% block body %}
+	<div class="d-flex flex-wrap">
+		{{ component('all_product') }}
+	</div>
 
-	{{ component('product', {
-        id: 1,
-    }) }}
-
-	{{ component('product', {
-        id: 2,
-    }) }}
 
 {% endblock %}
