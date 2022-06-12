@@ -1,11 +1,14 @@
-<div class="card m-1" style="width: 18rem;">
+<div class="card m-2 shadow" style="width: 18rem;">
 	<img src={{ this.product.image }} class="card-img-top" alt="...">
 	<div class="card-body">
-		<h5 class="card-title">{{ this.product.name }}</h5>
+		<d class="d-flex justify-content-between">
+			<h5 class="card-title">{{ this.product.name }}</h5>
+			{{ component('add_cart', {'idBase': this.product.id}) }}
+
+		</d>
 		<p class="card-text">{{ this.product.price }}
 			€
 		</p>
 		{#{{ component('add_cart', {'idBase': this.product.id}) }}#}
-		{{ component('add_cart', {'idBase': this.product.id}) }}
 	</div>
 </div>

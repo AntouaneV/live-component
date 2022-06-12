@@ -37,6 +37,6 @@ final class ProductAddToCart extends AbstractController
         $entityManager->persist($cart);
         $entityManager->flush();
 
-        $this->isSaved = true;
+        $this->isSaved = !$this->isSaved;
     }
 }
