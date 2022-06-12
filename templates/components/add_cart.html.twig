@@ -5,7 +5,7 @@
 
 <div {{attributes}}>
 
-	<button data-action="live#action" data-action-name="save" class="btn btn-primary">
+	<button id="{{idBase}}" data-action="live#action" data-action-name="save(id={{ idBase }})" class="btn btn-primary">
 		Add To C
 	</button>
 	{% if isSaved %}
