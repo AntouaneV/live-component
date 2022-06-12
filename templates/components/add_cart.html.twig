@@ -1,0 +1,14 @@
+{#<div {{ attributes }}>
+	<button id="{{idBase}}" class="btn btn-primary" data-action="live#action" data-action-name="addItem(id={{ idBase }})">Add Item</button>
+</div>#}
+
+
+<div {{attributes}}>
+
+	<button data-action="live#action" data-action-name="save" class="btn btn-primary">
+		Add To C
+	</button>
+	{% if isSaved %}
+		<div class="alert alert-success my-4">Enregistrer !</div>
+	{% endif %}
+</div>
