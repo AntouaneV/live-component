@@ -15,17 +15,7 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
-const toastTrigger = document.querySelectorAll('.btn-custom')
-const toastLiveExample = document.getElementById('liveToast')
 
-toastTrigger.forEach(element => {
-    element.addEventListener('click', () => {
-
-        const toast = new bootstrap.Toast(toastLiveExample)
-
-        toast.show()
-    })
-});
 
 
 

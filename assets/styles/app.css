@@ -37,10 +37,19 @@ h1 {
 
 .card-title {
     letter-spacing: -1px;
-    margin-top: 8px !important;
 }
 
 .card-text {
     font-weight: 600 !important;
     font-size: 14px !important;
+}
+
+
+
+
+
+
+.success_add_cart {
+    font-size: 14px;
+    color: mediumseagreen;
 }

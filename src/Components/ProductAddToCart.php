@@ -19,7 +19,9 @@ final class ProductAddToCart extends AbstractController
 
     #[LiveProp(writable: true)]
     public int $idBase;
-    //public bool $isSaved = false;
+
+    #[LiveProp(writable: true)]
+    public string $requestResult = '';
 
     #[LiveAction]
     public function save(ManagerRegistry $doctrine, #[LiveArg] int $id)
@@ -37,7 +39,7 @@ final class ProductAddToCart extends AbstractController
         $entityManager->persist($cart);
         $entityManager->flush();
 
-        //$this->isSaved = true;
+        $this->requestResult = "success";
 
     }
 }
